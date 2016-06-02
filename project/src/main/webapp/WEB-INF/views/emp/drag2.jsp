@@ -113,6 +113,33 @@
 
 
 								<ul class="sortable-list connectList agile-list" id="todo">
+									<!-- todo 리스트 뿌리기 시작 -->
+									<!-- 
+									class="warning-element" 주황색 
+									class="success-element" 초록색
+									class="info-element"    파란색
+									class="danger-element"  빨간색
+									
+									기본 폼
+									
+									<li class="색깔을 정하는 클래스" id="아이디는 task + ${board_no}" 로간다 >
+									
+										여기가 메모 전면부에 보이는 글 내용 부분
+										${board_content}
+										
+										<div class="agile-detail">
+										
+											<a href="#" class="pull-right btn btn-xs btn-white">자세히 보기</a> <i
+												class="fa fa-clock-o"></i> 
+												
+												
+												${board_date}
+										</div>
+									</li>
+									
+									-->
+									
+									
 									<li class="warning-element" id="task1">Simply dummy text
 										of the printing and typesetting industry.
 										<div class="agile-detail">
@@ -174,6 +201,11 @@
 										</div>
 									</li>
 								</ul>
+								<!-- todo 끝 -->
+								
+								
+								
+								
 							</div>
 						</div>
 					</div>

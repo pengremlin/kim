@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="DAO.UserDAO">
+
+	<select id="getAllUser" parameterType="list" resultType="User.DTO.User_info">
+		select * from User_info
+	</select>
+	
+	<select id="getUser" parameterType="Integer" resultType="User.DTO.User_info">
+		select * from User_info where user_no=#{user_no}
+	</select>
+	
+	
+	<insert id="insertUser" parameterType="User.DTO.User_info">
+		  insert into user_info(user_no,
+		                    user_name,
+		                    user_email,
+		                    user_birth,
+		                    user_id,
+		                    user_pwd,
+		                    user_gender,
+		                    user_add,
+		                    user_ph
+		                    )
+		                    values
+		                    (#{user_no},#{user_name},#{user_email},#{user_birth},#{user_id},#{user_pwd},#{user_gender},#{user_add},#{user_ph})
+		                    
+		
+	</insert>
+	
+	
+	
+</mapper>
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="DAO.ProjectDAO">
+
+	<select id="getAllList" parameterType="list" resultType="DTO.Board">
+		select * from board
+	</select>
+	
+
+	
+	
+	<insert id="insertmemo" parameterType="DTO.Board">
+		  insert into board(board_no,
+		                    board_title,
+		                    board_content,
+		                    board_date,
+		                    user_id
+		                    )
+		                    values
+		                    (Board_no_index.nextval,'title',#{board_content},sysdate,'gotogoto')
+	</insert>
+	
+
+	
+	
+</mapper>
+
+
+
+
+
+
+
